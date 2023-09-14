@@ -1,0 +1,40 @@
+#navLogo {
+    max-width: 50px;
+}
+
+#titelCenter {
+    text-align: center;
+}
+
+#mainTitle {
+    color: #41aa58;
+}
+
+#secondTitle {
+    font-size: medium;
+    color: #6ae576;
+}
+
+
+.underlined {
+    /*   background: red; */
+      position: relative;
+    }    
+    .underline-clip:after {
+      content: '';
+      position: absolute;
+      top: 90%;
+      width: 150%;
+      aspect-ratio: 6 / 1;
+      left: 50%;
+      transform: translate(-50%, 0);
+      border-radius: 50%;
+      border: 3px solid hsl(130 80% 50%);
+      /* Use a clip-path to hide and show the bits you want */
+      clip-path: polygon(0 0, 50% 50%, 100% 0);
+    }
+
+.spacer {
+    flex: 1 1 auto;
+}
+
