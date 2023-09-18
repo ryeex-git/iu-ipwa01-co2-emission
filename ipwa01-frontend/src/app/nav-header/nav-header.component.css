@@ -1,40 +1,71 @@
 #navLogo {
-    max-width: 50px;
+  max-width: 50px;
 }
 
 #titelCenter {
-    text-align: center;
+  text-align: center;
 }
 
 #mainTitle {
-    color: #41aa58;
+  color: #41aa58;
 }
 
 #secondTitle {
-    font-size: medium;
-    color: #6ae576;
+  font-size: medium;
+  color: #6ae576;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.navigation-bar {
+  height: 3em;
+  background-color: transparent;
+  position: fixed;
+  transition: all 0.4s ease-in-out;
+}
+
+.navigation-bar-scrolled {
+  height: 3em;
+  background-color: #2d383d;
+  position: fixed;
+  transition: all 0.4s ease-in-out;
+}
 
 .underlined {
-    /*   background: red; */
-      position: relative;
-    }    
-    .underline-clip:after {
-      content: '';
-      position: absolute;
-      top: 90%;
-      width: 150%;
-      aspect-ratio: 6 / 1;
-      left: 50%;
-      transform: translate(-50%, 0);
-      border-radius: 50%;
-      border: 3px solid hsl(130 80% 50%);
-      /* Use a clip-path to hide and show the bits you want */
-      clip-path: polygon(0 0, 50% 50%, 100% 0);
-    }
-
-.spacer {
-    flex: 1 1 auto;
+  position: relative;
+}
+.underline-clip:after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  width: 150%;
+  aspect-ratio: 6 / 1;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+  border: 3px solid hsl(130 80% 50%);
+  /* Use a clip-path to hide and show the bits you want */
+  clip-path: polygon(0 0, 50% 50%, 100% 0);
 }
 
+.underline-navigation:hover,
+.underline-navigation-active {
+  border-bottom: 1px solid white;
+}
+
+.navigation {
+  margin-right: 1em;
+  display: flex;
+}
+
+.nav-item {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}

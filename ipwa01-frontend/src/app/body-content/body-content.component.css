@@ -1,0 +1,90 @@
+div {
+  width: 100%;
+  height: 100%;
+}
+
+.background-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("./../../assets/images/Dan-Meyers-Unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.scroll-icon {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  -o-animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-5px);
+  }
+  60% {
+    -webkit-transform: translateY(-3px);
+  }
+}
+
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-5px);
+  }
+  60% {
+    -moz-transform: translateY(-3px);
+  }
+}
+
+@-o-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -o-transform: translateY(0);
+  }
+  40% {
+    -o-transform: translateY(-5px);
+  }
+  60% {
+    -o-transform: translateY(-3px);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+}

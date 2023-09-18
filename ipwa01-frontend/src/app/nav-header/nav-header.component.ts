@@ -6,6 +6,17 @@ import { Router } from '@angular/router';
   templateUrl: './nav-header.component.html',
   styleUrls: ['./nav-header.component.css']
 })
-export class NavHeaderComponent {
+export class NavHeaderComponent implements OnInit{
+  scrolled: boolean = false;
   constructor(private readonly router: Router){}
+  
+  ngOnInit(): void {
+   window.addEventListener('scroll', () => {
+    if (window.scrollY > 75) {
+      this.scrolled = true
+    } else {
+      this.scrolled = false
+        }
+   })
+  }
 }
