@@ -1,0 +1,82 @@
+{
+  "data": [
+    {
+      "companyName": "Dodge Motor Car Company",
+      "country": "United States of America",
+      "emissionInTonnePerYear": 300.46,
+      "unitPerYear": 200000,
+      "companyType": ["Car Manufacturer"]
+    },
+    {
+      "companyName": "Huawei GmbH",
+      "country": "China",
+      "emissionInTonnePerYear": 400.82,
+      "unitPerYear": 150000000,
+      "companyType": [
+        "Information and communications technology",
+        "Infrastruccture",
+        "Smart devices"
+      ]
+    },
+    {
+      "companyName": "Simens AG",
+      "country": "Germany",
+      "emissionInTonnePerYear": 150.13,
+      "unitPerYear": 300000000,
+      "companyType": ["Mobility", "Smart devices", "Digital Industries"]
+    },
+    {
+      "companyName": "Nintendo Co. Ltd.",
+      "country": "Japan",
+      "emissionInTonnePerYear": 251.36,
+      "unitPerYear": 145000001,
+      "companyType": ["Hardware development", "Software developemt"]
+    },
+    {
+      "companyName": "Shein",
+      "country": "Republic of Singapore",
+      "emissionInTonnePerYear": 600.36,
+      "unitPerYear": 1600000000,
+      "companyType": ["Fashion and accessories"]
+    },
+    {
+      "companyName": "Renault Société Anonyme",
+      "country": "France",
+      "emissionInTonnePerYear": 210.73,
+      "unitPerYear": 480000,
+      "companyType": ["Car Manufacturer"]
+    },
+    {
+      "companyName": "Apple Inc.",
+      "country": "United States of America",
+      "emissionInTonnePerYear": 750.12,
+      "unitPerYear": 290000000,
+      "companyType": [
+        "Information and communications technology",
+        "Software developemt",
+        "Hardware development"
+      ]
+    },
+    {
+      "companyName": "Primark Limited",
+      "country": "Ireland",
+      "emissionInTonnePerYear": 598.06,
+      "unitPerYear": 986000000,
+      "companyType": ["Fashion and accessories", "Home accessories"]
+    },
+    {
+      "companyName": "Logitech International S.A.",
+      "country": "Switzerland",
+      "emissionInTonnePerYear": 137.91,
+      "unitPerYear": 230000000,
+      "companyType": ["Computer accessories"]
+    },
+    {
+      "companyName": "Netflix",
+      "country": "United States of America",
+      "emissionInTonnePerYear": 95.34,
+      "unitPerYear": 1300000000,
+      "companyType": ["Film industry"]
+    }
+  ]
+}
