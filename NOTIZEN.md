@@ -1,0 +1,1 @@
+- Backend "tableData.json" -> nicht "countPerUnitProcued" inkludiert, da bei änderungen von "unitPerYear" & "emissionInTonnePerYear" man händisch "countPerUnitProcued" aktualisieren müsste. So wird in Frontend mithilfe von AGGrid die "countPerUnitProcued" errechnet

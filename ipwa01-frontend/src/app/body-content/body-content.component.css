@@ -14,16 +14,42 @@ div {
   height: 100%;
 }
 
+.center-header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.title {
+  font-size: xxx-large;
+}
+
+.sub-title {
+  font-size: x-large;
+  width: 50%;
+  text-align: center;
+}
+
 .scroll-icon {
+  font-size: xxx-large;
   position: absolute;
+  z-index: 0;
   bottom: 0;
+  height: auto;
   width: 100%;
   text-align: center;
   color: white;
-  animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  -moz-animation: bounce 2s infinite;
-  -o-animation: bounce 2s infinite;
+  animation: bounce 5s infinite;
+  -webkit-animation: bounce 5s infinite;
+  -moz-animation: bounce 5s infinite;
+  -o-animation: bounce 5s infinite;
+}
+
+.green-font {
+  color: hsl(130 80% 50%);
+  display: contents;
 }
 
 @-webkit-keyframes bounce {

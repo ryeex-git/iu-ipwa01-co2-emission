@@ -1,11 +1,38 @@
 <!-- Header Image -->
 <div class="background-image">
+  <div class="center-header">
+    <h1 class="title">
+      <b
+        >Explore
+        <div class="green-font">CO₂</div>
+        Emissions Worldwide</b
+      >
+    </h1>
+    <h4 class="sub-title">
+      Get on a global journey to unveil the carbon footprints of various nations
+      and delve into the emission statistics of leading companies, gaining
+      valuable insights into their environmental impact and sustainability
+      efforts.
+    </h4>
+  </div>
   <mat-icon
     class="scroll-icon"
     aria-hidden="false"
-    aria-label="Example home icon"
+    aria-label="scoll-indicator"
     fontIcon="expand_more"
   ></mat-icon>
 </div>
 <!-- Website Content -->
-<div class="">test</div>
+<div class="">
+  <ag-grid-angular
+    style="width: 100%; height: 100%"
+    class="ag-theme-alpine"
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    [rowData]="rowData"
+    [rowSelection]="'single'"
+    [animateRows]="true"
+    (gridReady)="onGridReady($event)"
+    (cellClicked)="onCellClicked($event)"
+  ></ag-grid-angular>
+</div>
