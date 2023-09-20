@@ -3,6 +3,7 @@ export interface TableData {
 }
 
 interface DetailedData {
+  countPerUnitProduced?: number;
   companyName: string;
   country: string;
   emissionInTonnePerYear: number;

@@ -52,6 +52,11 @@ div {
   display: contents;
 }
 
+.webContent {
+  width: 90%;
+  margin: auto;
+}
+
 @-webkit-keyframes bounce {
   0%,
   20%,

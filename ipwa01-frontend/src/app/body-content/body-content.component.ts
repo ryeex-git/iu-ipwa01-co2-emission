@@ -3,6 +3,7 @@ import { AgGridAngular } from 'ag-grid-angular';
 import { ColDef, GridReadyEvent, CellClickedEvent } from 'ag-grid-community';
 import { Observable } from 'rxjs';
 import { ApiService } from './../../service/api.service';
+import { TableCountryRenderer } from 'src/assets/models/tableCounty.renderer';
 
 @Component({
   selector: 'app-body-content',
@@ -11,46 +12,40 @@ import { ApiService } from './../../service/api.service';
   providers: [ApiService],
 })
 export class BodyContentComponent {
-  // Each Column Definition results in one Column.
   public columnDefs: ColDef[] = [
     { field: 'companyName' },
-    { field: 'country' },
+    { field: 'country', cellRenderer: TableCountryRenderer },
     { field: 'companyType' },
     { field: 'emissionInTonnePerYear' },
     { field: 'unitPerYear' },
-    { field: 'countPerUnitProcued' },
+    { field: 'countPerUnitProduced' },
   ];
 
-  // DefaultColDef sets props common to all Columns
   public defaultColDef: ColDef = {
     sortable: true,
     filter: true,
   };
 
-  // Data that gets displayed in the grid
   public rowData!: any;
 
-  // For accessing the Grid's API
   @ViewChild(AgGridAngular) agGrid!: AgGridAngular;
-
   constructor(private apiService: ApiService) {}
 
-  // Example load data from server
   onGridReady(params: GridReadyEvent) {
-    this.apiService.getTableData().subscribe((data) => {
-      console.log(data);
-      console.log(data['data']);
-      //TODO Need to edit values to match the columnDefs
+    this.apiService.getTableData().subscribe((response) => {
+      for (const rowData of response.data) {
+        rowData.countPerUnitProduced = Number(
+          (
+            (rowData.emissionInTonnePerYear / rowData.unitPerYear) *
+            1000
+          ).toFixed(4)
+        );
+      }
+      this.agGrid.api.setRowData(response.data);
     });
   }
 
-  // Example of consuming Grid Event
   onCellClicked(e: CellClickedEvent): void {
     console.log('cellClicked', e);
-  }
-
-  // Example using Grid's API
-  clearSelection(): void {
-    this.agGrid.api.deselectAll();
   }
 }
