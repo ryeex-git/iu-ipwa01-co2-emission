@@ -3,7 +3,7 @@
 @import url("./styles/roboto.css");
 
 @import "ag-grid-community/styles/ag-grid.css";
-@import "ag-grid-community/styles/ag-theme-alpine.css";
+@import "ag-grid-community/styles/ag-theme-material.css";
 
 html,
 body {

@@ -8,4 +8,5 @@ interface DetailedData {
   emissionInTonnePerYear: number;
   unitPerYear: number;
   companyType: string[];
+  continent: string;
 }

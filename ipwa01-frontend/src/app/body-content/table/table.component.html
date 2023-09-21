@@ -1,0 +1,64 @@
+<!-- TODO Check if it is really necessary to have 3 form-fields -->
+<mat-card style="height: 70%">
+  <mat-card-content style="height: 100%">
+    <div
+      style="
+        display: flex;
+        gap: 1em;
+        width: 100%;
+        justify-content: space-between;
+      "
+    >
+      <mat-form-field [formGroup]="userInput" style="width: 85%">
+        <mat-label>Search for company name</mat-label>
+        <input
+          matInput
+          placeholder="Search..."
+          formControlName="companyName"
+          [(ngModel)]="value"
+        />
+      </mat-form-field>
+
+      <mat-form-field [formGroup]="userInput">
+        <mat-select
+          multiple
+          placeholder="Select country"
+          formControlName="country"
+          [(ngModel)]="selectedCountrys"
+        >
+          <mat-option *ngFor="let country of countrys" [value]="country">
+            {{ country.filter }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field [formGroup]="userInput">
+        <mat-select
+          multiple
+          placeholder="Select continent"
+          formControlName="continent"
+          [(ngModel)]="selectedContinents"
+        >
+          <mat-option *ngFor="let continent of continents" [value]="continent">
+            {{ continent.filter }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <button mat-icon-button (click)="onclearSelection()">
+        <mat-icon fontIcon="undo" class="mat-icon mat-icon-no-color" />
+      </button>
+    </div>
+
+    <ag-grid-angular
+      style="width: 100%; height: 90%"
+      class="ag-theme-material"
+      [columnDefs]="columnDefs"
+      [defaultColDef]="defaultColDef"
+      [rowData]="rowData"
+      [rowSelection]="'single'"
+      [animateRows]="true"
+      (gridReady)="onGridReady($event)"
+      (cellClicked)="onCellClicked($event)"
+    ></ag-grid-angular>
+  </mat-card-content>
+</mat-card>
