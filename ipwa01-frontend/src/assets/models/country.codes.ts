@@ -7,5 +7,7 @@ export const COUNTRY_CODES = {
   France: 'fr',
   Ireland: 'ie',
   Switzerland: 'ch',
-  '...': '...',
+  'United Kingdom': 'gb',
+  Finland: 'fi',
+  'South Korea': 'kr',
 };

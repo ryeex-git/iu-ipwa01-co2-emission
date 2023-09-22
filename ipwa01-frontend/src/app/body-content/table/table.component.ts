@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { AgGridAngular } from 'ag-grid-angular';
 import { ColDef, GridReadyEvent, CellClickedEvent } from 'ag-grid-community';
 import { debounceTime } from 'rxjs';
@@ -40,19 +41,21 @@ export class TableComponent implements AfterViewInit {
       sort: 'asc',
       sortIndex: 1,
     },
-    { field: 'companyType', headerTooltip: 'Company Type' },
+    { field: 'companyType', headerTooltip: 'Company Type', filter: false },
     {
       field: 'emissionInTonnePerYear',
       headerTooltip: 'Emission in tonne per year',
+      filter: false,
     },
-    { field: 'unitPerYear', headerTooltip: 'Unit per year' },
+    { field: 'unitPerYear', headerTooltip: 'Unit per year', filter: false },
     {
       field: 'countPerUnitProduced',
       headerTooltip: 'Emission count per unit produced',
+      filter: false,
     },
     {
       field: 'continent',
-      // hide: true,
+      hide: true,
     },
   ];
 
@@ -65,7 +68,7 @@ export class TableComponent implements AfterViewInit {
   public rowData!: any;
 
   @ViewChild(AgGridAngular) agGrid!: AgGridAngular;
-  constructor(private apiService: ApiService) {}
+  constructor(private apiService: ApiService, private _snackBar: MatSnackBar) {}
 
   ngAfterViewInit(): void {
     this.userInput.valueChanges.pipe(debounceTime(500)).subscribe((data) => {
@@ -125,5 +128,8 @@ export class TableComponent implements AfterViewInit {
     this.selectedContinents = [];
     this.selectedCountrys = [];
     this.value = '';
+    this._snackBar.open('Sorting of table cleared!', 'OK', {
+      duration: 2000,
+    });
   }
 }

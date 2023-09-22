@@ -32,6 +32,16 @@ div {
   text-align: center;
 }
 
+.inline-Title {
+  display:inline-grid
+}
+
+.information-title {
+  font-size: xx-large;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
 .scroll-icon {
   font-size: xxx-large;
   position: absolute;
@@ -47,14 +57,31 @@ div {
   -o-animation: bounce 5s infinite;
 }
 
+.mat-icon-center {
+  display: flex;
+  transform: scale(3);
+  padding-bottom: 1em;
+  justify-content: center;
+  width: auto;
+  color: rgb(229, 229, 229);
+}
+
 .green-font {
   color: hsl(130 80% 50%);
   display: contents;
 }
 
+.fit-content {
+  height: fit-content;
+}
+
 .webContent {
   width: 90%;
   margin: auto;
+}
+
+.informationContent{
+  padding-top: 5em;
 }
 
 @-webkit-keyframes bounce {

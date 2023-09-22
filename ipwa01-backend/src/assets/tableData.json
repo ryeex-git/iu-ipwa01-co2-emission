@@ -87,6 +87,240 @@
       "unitPerYear": 1300000000,
       "companyType": ["Film industry"],
       "continent": "North America"
+    },
+    {
+      "companyName": "Toyota Motor Corporation",
+      "country": "Japan",
+      "emissionInTonnePerYear": 520.18,
+      "unitPerYear": 1000000,
+      "companyType": ["Car Manufacturer"],
+      "continent": "Asia"
+    },
+    {
+      "companyName": "Amazon.com, Inc.",
+      "country": "United States of America",
+      "emissionInTonnePerYear": 830.25,
+      "unitPerYear": 2500000000,
+      "companyType": [
+        "E-commerce",
+        "Cloud computing",
+        "Artificial intelligence"
+      ],
+      "continent": "North America"
+    },
+    {
+      "companyName": "Samsung Electronics Co., Ltd.",
+      "country": "South Korea",
+      "emissionInTonnePerYear": 610.62,
+      "unitPerYear": 350000000,
+      "companyType": [
+        "Information and communications technology",
+        "Consumer electronics",
+        "Semiconductors"
+      ],
+      "continent": "Asia"
+    },
+    {
+      "companyName": "Volkswagen AG",
+      "country": "Germany",
+      "emissionInTonnePerYear": 480.37,
+      "unitPerYear": 3100000,
+      "companyType": ["Car Manufacturer"],
+      "continent": "Europe"
+    },
+    {
+      "companyName": "Unilever PLC",
+      "country": "United Kingdom",
+      "emissionInTonnePerYear": 420.91,
+      "unitPerYear": 1000000000,
+      "companyType": ["Consumer goods"],
+      "continent": "Europe"
+    },
+    {
+      "companyName": "Microsoft Corporation",
+      "country": "United States of America",
+      "emissionInTonnePerYear": 570.65,
+      "unitPerYear": 350000000,
+      "companyType": [
+        "Information and communications technology",
+        "Software development",
+        "Cloud computing"
+      ],
+      "continent": "North America"
+    },
+    {
+      "companyName": "Nestlé S.A.",
+      "country": "Switzerland",
+      "emissionInTonnePerYear": 670.21,
+      "unitPerYear": 1200000000,
+      "companyType": ["Food and beverage"],
+      "continent": "Europe"
+    },
+    {
+      "companyName": "General Electric Company",
+      "country": "United States of America",
+      "emissionInTonnePerYear": 290.87,
+      "unitPerYear": 2600000,
+      "companyType": ["Conglomerate"],
+      "continent": "North America"
+    },
+    {
+      "companyName": "Ford Motor Company",
+      "country": "United States of America",
+      "emissionInTonnePerYear": 410.29,
+      "unitPerYear": 2900000,
+      "companyType": ["Car Manufacturer"],
+      "continent": "North America"
+    },
+    {
+      "companyName": "Sony Corporation",
+      "country": "Japan",
+      "emissionInTonnePerYear": 310.77,
+      "unitPerYear": 180000000,
+      "companyType": [
+        "Information and communications technology",
+        "Consumer electronics",
+        "Entertainment"
+      ],
+      "continent": "Asia"
+    },
+    {
+      "companyName": "The Coca-Cola Company",
+      "country": "United States of America",
+      "emissionInTonnePerYear": 490.05,
+      "unitPerYear": 8000000000,
+      "companyType": ["Beverage"],
+      "continent": "North America"
+    },
+    {
+      "companyName": "Intel Corporation",
+      "country": "United States of America",
+      "emissionInTonnePerYear": 410.96,
+      "unitPerYear": 700000000,
+      "companyType": [
+        "Information and communications technology",
+        "Semiconductors"
+      ],
+      "continent": "North America"
+    },
+    {
+      "companyName": "Procter & Gamble Company",
+      "country": "United States of America",
+      "emissionInTonnePerYear": 540.12,
+      "unitPerYear": 1800000000,
+      "companyType": ["Consumer goods"],
+      "continent": "North America"
+    },
+    {
+      "companyName": "L'Oréal S.A.",
+      "country": "France",
+      "emissionInTonnePerYear": 230.81,
+      "unitPerYear": 1300000000,
+      "companyType": ["Cosmetics"],
+      "continent": "Europe"
+    },
+    {
+      "companyName": "Boeing Company",
+      "country": "United States of America",
+      "emissionInTonnePerYear": 380.67,
+      "unitPerYear": 500000,
+      "companyType": ["Aerospace"],
+      "continent": "North America"
+    },
+    {
+      "companyName": "Pfizer Inc.",
+      "country": "United States of America",
+      "emissionInTonnePerYear": 280.41,
+      "unitPerYear": 100000000,
+      "companyType": ["Pharmaceuticals"],
+      "continent": "North America"
+    },
+    {
+      "companyName": "BMW AG",
+      "country": "Germany",
+      "emissionInTonnePerYear": 290.75,
+      "unitPerYear": 2300000,
+      "companyType": ["Car Manufacturer"],
+      "continent": "Europe"
+    },
+    {
+      "companyName": "Nike, Inc.",
+      "country": "United States of America",
+      "emissionInTonnePerYear": 380.88,
+      "unitPerYear": 340000000,
+      "companyType": ["Sportswear"],
+      "continent": "North America"
+    },
+    {
+      "companyName": "Dell Technologies Inc.",
+      "country": "United States of America",
+      "emissionInTonnePerYear": 320.29,
+      "unitPerYear": 450000000,
+      "companyType": [
+        "Information and communications technology",
+        "Hardware development",
+        "Software development"
+      ],
+      "continent": "North America"
+    },
+    {
+      "companyName": "Siemens Healthineers AG",
+      "country": "Germany",
+      "emissionInTonnePerYear": 180.45,
+      "unitPerYear": 160000000,
+      "companyType": ["Healthcare"],
+      "continent": "Europe"
+    },
+    {
+      "companyName": "The Walt Disney Company",
+      "country": "United States of America",
+      "emissionInTonnePerYear": 290.64,
+      "unitPerYear": 620000000,
+      "companyType": ["Entertainment"],
+      "continent": "North America"
+    },
+    {
+      "companyName": "Mercedes-Benz AG",
+      "country": "Germany",
+      "emissionInTonnePerYear": 360.12,
+      "unitPerYear": 1400000,
+      "companyType": ["Car Manufacturer"],
+      "continent": "Europe"
+    },
+    {
+      "companyName": "HSBC Holdings plc",
+      "country": "United Kingdom",
+      "emissionInTonnePerYear": 490.02,
+      "unitPerYear": 3000000000,
+      "companyType": ["Banking and financial services"],
+      "continent": "Europe"
+    },
+    {
+      "companyName": "Merck & Co., Inc.",
+      "country": "United States of America",
+      "emissionInTonnePerYear": 180.73,
+      "unitPerYear": 240000000,
+      "companyType": ["Pharmaceuticals"],
+      "continent": "North America"
+    },
+    {
+      "companyName": "Nokia Corporation",
+      "country": "Finland",
+      "emissionInTonnePerYear": 140.27,
+      "unitPerYear": 260000000,
+      "companyType": [
+        "Information and communications technology",
+        "Network infrastructure"
+      ],
+      "continent": "Europe"
+    },
+    {
+      "companyName": "Mitsubishi Corporation",
+      "country": "Japan",
+      "emissionInTonnePerYear": 310.89,
+      "unitPerYear": 190000000,
+      "companyType": ["Conglomerate"],
+      "continent": "Asia"
     }
   ]
 }
