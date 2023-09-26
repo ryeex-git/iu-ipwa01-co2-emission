@@ -19,20 +19,22 @@
   </a>
   <span class="spacer"></span>
   <div class="navigation">
-    <a
-      [routerLink]="['/']"
-      class="underlined underline-navigation-active nav-item"
-    >
-      <h1>Home</h1>
-    </a>
-    <a [routerLink]="['/']" class="underlined underline-navigation nav-item">
-      <h1>About</h1>
-    </a>
-    <a [routerLink]="['/']" class="underlined underline-navigation nav-item">
-      <h1>?</h1>
-    </a>
-    <a [routerLink]="['/']" class="underlined underline-navigation nav-item">
-      <h1>!</h1>
-    </a>
+    <div [id]="localeDirection" style="display: flex">
+      <a
+        [routerLink]="['/']"
+        class="underlined underline-navigation-active nav-item"
+      >
+        <h1>Home</h1>
+      </a>
+      <a
+        [routerLink]="['/about']"
+        class="underlined underline-navigation nav-item"
+      >
+        <h1>About</h1>
+      </a>
+      <a [routerLink]="['/']" class="underlined underline-navigation nav-item">
+        <h1>FAQ</h1>
+      </a>
+    </div>
   </div>
 </mat-toolbar>

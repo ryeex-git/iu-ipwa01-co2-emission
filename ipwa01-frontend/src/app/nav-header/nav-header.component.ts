@@ -1,22 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { getLocaleDirection } from '@angular/common';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav-header',
   templateUrl: './nav-header.component.html',
-  styleUrls: ['./nav-header.component.scss']
+  styleUrls: ['./nav-header.component.scss'],
 })
-export class NavHeaderComponent implements OnInit{
+export class NavHeaderComponent implements OnInit {
   scrolled: boolean = false;
-  constructor(private readonly router: Router){}
-  
-  ngOnInit(): void {
-   window.addEventListener('scroll', () => {
+  localeDirection: string;
+
+  constructor(private readonly router: Router) {
+    this.localeDirection = getComputedStyle(document.body).direction;
+  }
+
+  ngOnInit(): void {}
+
+  @HostListener('window:scroll')
+  animateNagivationBar() {
     if (window.scrollY > 75) {
-      this.scrolled = true
+      this.scrolled = true;
     } else {
-      this.scrolled = false
-        }
-   })
+      this.scrolled = false;
+    }
   }
 }

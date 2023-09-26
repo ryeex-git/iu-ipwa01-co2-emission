@@ -72,10 +72,12 @@ export class TableComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     this.userInput.valueChanges.pipe(debounceTime(500)).subscribe((data) => {
+      const regexTestCompany = new RegExp('[a-zA-Z]').exec(data.companyName);
+
       this.agGrid.api.setFilterModel({
         companyName: {
           type: 'contains',
-          filter: data.companyName,
+          filter: regexTestCompany?.[0],
         },
         country: {
           filterType: 'text',

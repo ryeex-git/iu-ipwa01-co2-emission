@@ -19,6 +19,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { FooterComponent } from './body-content/footer/footer.component';
+import { AboutComponent } from './views/about/about/about.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     NavHeaderComponent,
     BodyContentComponent,
     TableComponent,
+    FooterComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,5 +50,6 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
   ],
   providers: [],
   bootstrap: [AppComponent],
+  exports: [AboutComponent, BodyContentComponent],
 })
 export class AppModule {}
