@@ -1,1 +1,52 @@
-<app-nav-header></app-nav-header>
+<app-nav-header
+  [activeNavTab]="'about'"
+  [disableScrolled]="true"
+></app-nav-header>
+<div class="webContent">
+  <div class="aboutContent">
+    <mat-card style="height: 100%">
+      <mat-card-header>
+        <mat-card-title>About</mat-card-title>
+        <mat-card-subtitle>the website</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content style="font-size: 17px">
+        <p>
+          This website was conceived and developed with a profound understanding
+          of the urgent and complex nature of the global climate crisis. Climate
+          change, primarily driven by escalating CO2 emissions, poses a
+          substantial threat to our planet and all its inhabitants. The
+          necessity to combat this threat and transition to a sustainable future
+          propelled the creation of this platform. The vision was to offer a
+          centralized and easily accessible source of knowledge and resources
+          concerning CO2 emissions — encompassing their origins, the
+          far-reaching impacts on our environment and society, as well as viable
+          solutions to mitigate these effects.
+        </p>
+        <p>
+          In an era where information is a powerful catalyst for change, the
+          website was envisioned to be an educational hub that could reach a
+          vast and diverse audience. By presenting accurate and up-to-date
+          information in an easily understandable format, the goal is to empower
+          individuals, corporations, policymakers, educators, and advocates
+          alike. Armed with knowledge, they can make informed decisions, adopt
+          sustainable practices, and advocate for policy changes that steer
+          humanity toward a greener and more sustainable path.
+        </p>
+        <p>
+          Furthermore, this website stands as a beacon for collective action.
+          It's a call to arms for individuals to acknowledge their personal
+          responsibility in reducing carbon footprints and embrace sustainable
+          lifestyles. By fostering a sense of shared duty towards our planet and
+          its future, the website seeks to ignite a ripple effect, where one
+          person's actions inspire another, amplifying the impact exponentially.
+          In essence, this website was developed as a proactive response to a
+          critical global challenge, with the hope that it sparks a
+          transformative shift in human behavior and attitudes towards a more
+          harmonious coexistence with nature.
+        </p>
+        <p><b>- Keep Track -</b></p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <app-footer id="footerStyle"></app-footer>
+</div>

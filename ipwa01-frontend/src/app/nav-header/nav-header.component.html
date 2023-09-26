@@ -20,19 +20,13 @@
   <span class="spacer"></span>
   <div class="navigation">
     <div [id]="localeDirection" style="display: flex">
-      <a
-        [routerLink]="['/']"
-        class="underlined underline-navigation-active nav-item"
-      >
+      <a [routerLink]="['/']" [className]="homeClass" #home>
         <h1>Home</h1>
       </a>
-      <a
-        [routerLink]="['/about']"
-        class="underlined underline-navigation nav-item"
-      >
+      <a [routerLink]="['/about']" [className]="aboutClass" #about>
         <h1>About</h1>
       </a>
-      <a [routerLink]="['/']" class="underlined underline-navigation nav-item">
+      <a [routerLink]="['/']" [className]="faqClass" #faq>
         <h1>FAQ</h1>
       </a>
     </div>
