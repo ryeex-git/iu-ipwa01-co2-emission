@@ -1,1 +1,26 @@
-<p>imprint works!</p>
+<app-nav-header [activeNavTab]="''" [disableScrolled]="true"></app-nav-header>
+<div class="webContent">
+  <div style="width: 80%; margin: auto; height: 100%">
+    <div style="padding-top: 5em">
+      <h1>Imprint</h1>
+      <span style="display: grid">
+        <b>{{ this.imprintData?.name }}</b>
+        <div>{{ this.imprintData?.street }}</div>
+        <div>{{ this.imprintData?.postalcode }}</div>
+      </span>
+      <span style="display: grid">
+        <div><b>Telephone number:</b> {{ this.imprintData?.number }}</div>
+        <div><b>Email:</b> {{ this.imprintData?.email }}</div>
+      </span>
+      <h2>Managing Directors:</h2>
+      <span style="display: grid">
+        {{ this.imprintData?.headOfOffice }}
+      </span>
+      <h2>Disclaimer:</h2>
+      <span style="display: grid">
+        {{ this.imprintData?.disclaimer }}
+      </span>
+    </div>
+  </div>
+  <app-footer id="footerStyle" [activeFooterTab]="'imprint'"></app-footer>
+</div>

@@ -12,9 +12,9 @@ export class AppController {
     return this.appService.getTableData();
   }
 
-  @Get('about')
+  @Get('imprint')
   @HttpCode(200)
-  getAboutData(): any {
-    return this.appService.getTableData();
+  getImprintData(): any {
+    return this.appService.getImprintData();
   }
 }

@@ -13,7 +13,6 @@ export class NavHeaderComponent implements OnInit {
   localeDirection: string;
   homeClass: string = 'underlined underline-navigation nav-item';
   aboutClass: string = 'underlined underline-navigation nav-item';
-  faqClass: string = 'underlined underline-navigation nav-item';
 
   @Input() activeNavTab: string = '';
   @Input() disableScrolled: boolean | null = null;
@@ -29,9 +28,6 @@ export class NavHeaderComponent implements OnInit {
         break;
       case 'about':
         this.aboutClass = 'underlined underline-navigation-active nav-item';
-        break;
-      case 'faq':
-        this.faqClass = 'underlined underline-navigation-active nav-item';
         break;
     }
     if (this.disableScrolled !== null) {

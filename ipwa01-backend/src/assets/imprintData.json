@@ -1,0 +1,9 @@
+{
+  "name": "Max Mustermann GmbH",
+  "street": "Maxer Straße 2",
+  "postalcode": "D-76654 Musterstadt",
+  "number": "+49 40 534 55-0",
+  "email": "MaxMustermann@musterDomain.de",
+  "headOfOffice": "Max Mustermann",
+  "disclaimer": "This is just a mockup site. All data is not real and is only for the IU IPWA module."
+}

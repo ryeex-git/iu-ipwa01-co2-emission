@@ -1,9 +1,11 @@
-<footer>
+<footer style="height: 4em; background-color: #2d383d">
   <mat-card style="background-color: #2d383d; margin-top: 2.5em; color: white">
     <mat-card-content>
       <div style="display: flex; justify-content: space-evenly">
-        <a [routerLink]="['/imprint']">Imprint</a>
-        <a [routerLink]="['/']">General Data Protection Regulation</a>
+        <a [routerLink]="['/imprint']" [className]="imprint">Imprint</a>
+        <a [routerLink]="['/']" [className]="gdpr"
+          >General Data Protection Regulation</a
+        >
       </div>
     </mat-card-content>
   </mat-card>
