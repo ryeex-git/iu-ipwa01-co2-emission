@@ -1,7 +1,7 @@
 .webContent {
-    background-color: #3d494f;
     height: 100%;
     width: 100%;
+    display: flex;
 }
 
 .aboutContent {
@@ -15,4 +15,20 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.title {
+    font-size: xxx-large;
+}
+
+#backgroundImage {
+    background-image: url("./../../../../assets/images/Shifen-Waterfall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45%; height: 100%
+}
+
+.green-font {
+    color: hsl(130 80% 50%);
+    display: contents;
 }

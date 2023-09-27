@@ -41,10 +41,12 @@ export class NavHeaderComponent implements OnInit {
 
   @HostListener('window:scroll')
   animateNagivationBar() {
-    if (window.scrollY > 75) {
-      this.scrolled = true;
-    } else {
-      this.scrolled = false;
+    if (!this.disableScrolled) {
+      if (window.scrollY > 75) {
+        this.scrolled = true;
+      } else {
+        this.scrolled = false;
+      }
     }
   }
 }
