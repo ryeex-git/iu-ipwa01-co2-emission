@@ -20,7 +20,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FooterComponent } from './body-content/footer/footer.component';
-import { AboutComponent } from './views/about/about/about.component';
+import { AboutComponent } from './views/about/about.component';
+import { ImprintComponent } from './views/imprint/imprint.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { AboutComponent } from './views/about/about/about.component';
     TableComponent,
     FooterComponent,
     AboutComponent,
+    ImprintComponent,
   ],
   imports: [
     BrowserModule,
