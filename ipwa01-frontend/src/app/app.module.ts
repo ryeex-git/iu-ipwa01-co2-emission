@@ -22,6 +22,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FooterComponent } from './body-content/footer/footer.component';
 import { AboutComponent } from './views/about/about.component';
 import { ImprintComponent } from './views/imprint/imprint.component';
+import { GdprComponent } from './views/gdpr/gdpr.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ImprintComponent } from './views/imprint/imprint.component';
     FooterComponent,
     AboutComponent,
     ImprintComponent,
+    GdprComponent,
   ],
   imports: [
     BrowserModule,
