@@ -1,0 +1,27 @@
+@startuml Get backend data
+header Sequence-flow-diagram
+title Get backend data
+actor User
+entity Frontend
+entity Backend
+User -> Frontend: Visit page
+Frontend -> Backend: Get data
+Backend -> Backend: Get information\nfrom JSONs
+Backend --> Frontend: Return data
+Frontend -> User: Display data
+@enduml
+
+@startuml backend controls
+header Class-diagram
+title Backend service
+hide circle
+class "localhost:3000/api/v1" as l <<API>> 
+class "TableData" as t <<ressource>> {
+    GET()
+}
+class "ImprintData" as i <<ressource>>{
+    GET()
+}
+l --> t
+l --> i
+@enduml
