@@ -89,6 +89,10 @@ div {
   margin: auto;
 }
 
+.infoText{
+  display: flex
+}
+
 .informationContent{
   padding-top: 5em;
 }
@@ -153,5 +157,30 @@ div {
   }
   60% {
     transform: translateY(-3px);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  // Tablets:
+  .title{
+    font-size: x-large;
+  }
+
+  .sub-title{
+    font-size: medium;
+  }
+
+  .center-header {
+    display: flex;
+    color: white;
+  }  
+
+  .infoText{
+    display: block;
+    padding-bottom: 1em;
+  }
+
+  .text{
+    margin-bottom: 5em;
   }
 }

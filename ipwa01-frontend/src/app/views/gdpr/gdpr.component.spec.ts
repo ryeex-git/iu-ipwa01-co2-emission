@@ -8,7 +8,7 @@ describe('GdprComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [GdprComponent]
+      declarations: [GdprComponent],
     });
     fixture = TestBed.createComponent(GdprComponent);
     component = fixture.componentInstance;
