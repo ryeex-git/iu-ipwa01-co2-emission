@@ -1,12 +1,14 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { CacheModule } from '@nestjs/cache-manager';
 
 describe('AppController', () => {
   let appController: AppController;
 
   beforeEach(async () => {
     const app: TestingModule = await Test.createTestingModule({
+      imports: [CacheModule.register()],
       controllers: [AppController],
       providers: [AppService],
     }).compile();
@@ -15,8 +17,8 @@ describe('AppController', () => {
   });
 
   describe('root', () => {
-    it('should return "TableData" JSON', () => {
-      expect(appController.getTableData()).toStrictEqual({
+    it('should return "TableData" JSON', async () => {
+      expect(await appController.getTableData()).toStrictEqual({
         data: [
           {
             companyName: 'Dodge Motor Car Company',
@@ -344,8 +346,8 @@ describe('AppController', () => {
       });
     });
 
-    it('should return "ImprintData" JSON', () => {
-      expect(appController.getImprintData()).toStrictEqual({
+    it('should return "ImprintData" JSON', async () => {
+      expect(await appController.getImprintData()).toStrictEqual({
         disclaimer:
           'This is just a mockup site. All data is not real and is only for the IU IPWA module.',
         email: 'MaxMustermann@musterDomain.de',
