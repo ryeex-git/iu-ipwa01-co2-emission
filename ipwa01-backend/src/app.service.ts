@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import * as TABLE_DATA_RESPONSE from './assets/tableData.json';
 import * as IMPRINT_DATA_RESPONSE from './assets/imprintData.json';
-import { TableData } from './model/tableData.model';
+import { ImprintData, TableData } from './model/tableData.model';
 
 @Injectable()
 export class AppService {
@@ -9,7 +9,7 @@ export class AppService {
     return TABLE_DATA_RESPONSE;
   }
 
-  getImprintData() {
+  getImprintData(): ImprintData {
     return IMPRINT_DATA_RESPONSE;
   }
 }
